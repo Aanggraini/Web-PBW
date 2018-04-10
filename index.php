@@ -25,10 +25,11 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
         echo "<td>".$user_data['firstname']."</td>";
         echo "<td>".$user_data['lastname']."</td>";
         echo "<td>".$user_data['email']."</td>"; 
-		echo "<td>".$user_data['message']."</td>";		
+        echo "<td>".$user_data['message']."</td>";      
         echo "<td><a href='edit.php?id=$user_data[id]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>";        
     }
     ?>
     </table>
+    <p><a href="download.php"><button>Download</button></a></p>
 </body>
 </html>
